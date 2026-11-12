@@ -1,0 +1,174 @@
+/* Cutting-Edge Architectural Paint Visualizer & All-Combinations Studio */
+:root {
+  --bg-primary: #060911;
+  --bg-secondary: #0f1523;
+  --bg-card: rgba(15, 23, 42, 0.78);
+  --border-color: rgba(255, 255, 255, 0.09);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent-gold: #f59e0b;
+  --accent-blue: #3b82f6;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(245, 158, 11, 0.10) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.08) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+/* Glassmorphic Luxury Panels */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+/* Dual-Edge Gradient Border Effect */
+.two-edge-card {
+  position: relative;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.92), rgba(9, 13, 24, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.two-edge-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 2px;
+  background: linear-gradient(90deg, #f59e0b, #3b82f6, transparent);
+  border-top-left-radius: inherit;
+  pointer-events: none;
+}
+
+.two-edge-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  height: 2px;
+  background: linear-gradient(270deg, #10b981, #3b82f6, transparent);
+  border-bottom-right-radius: inherit;
+  pointer-events: none;
+}
+
+/* Smooth Entrance & Micro-Interaction Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.65);
+  }
+  50% {
+    transform: scale(1.14);
+    box-shadow: 0 0 0 8px rgba(245, 158, 11, 0);
+  }
+}
+
+.pulse-badge {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Combination Card Hover Zoom */
+.combo-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.combo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+.combo-card img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.combo-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Color Button Pills */
+.color-num-btn {
+  transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.color-num-btn:active {
+  transform: scale(0.9);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile Sticky Bottom Bar Adjustment */
+@media (max-width: 1023px) {
+  body {
+    padding-bottom: 150px;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding-bottom: 0 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

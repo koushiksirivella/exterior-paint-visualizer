@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "Signature Gold & Charcoal",
+    "file": "images/combinations/combo_2_3_1_2_3.jpg",
+    "wall": 2,
+    "frame": 3,
+    "louvers": 1,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 2,
+    "title": "Brown Paper Louvers & Charcoal Trim",
+    "file": "images/combinations/combo_2_3_5_2_3.jpg",
+    "wall": 2,
+    "frame": 3,
+    "louvers": 5,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 3,
+    "title": "Stone Path Louvers & Charcoal Trim",
+    "file": "images/combinations/combo_2_3_4_2_3.jpg",
+    "wall": 2,
+    "frame": 3,
+    "louvers": 4,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 4,
+    "title": "Ice Age Louvers & Charcoal Frame",
+    "file": "images/combinations/combo_2_3_2_2_3.jpg",
+    "wall": 2,
+    "frame": 3,
+    "louvers": 2,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 5,
+    "title": "Monolith Charcoal Louvers & Trim",
+    "file": "images/combinations/combo_2_3_3_2_3.jpg",
+    "wall": 2,
+    "frame": 3,
+    "louvers": 3,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 6,
+    "title": "Slate Facade & Gold Louvers",
+    "file": "images/combinations/combo_4_2_1_4_3.jpg",
+    "wall": 4,
+    "frame": 2,
+    "louvers": 1,
+    "balcony": 4,
+    "ceiling": 3
+  },
+  {
+    "id": 7,
+    "title": "Slate Facade & Brown Paper Louvers",
+    "file": "images/combinations/combo_4_2_5_4_3.jpg",
+    "wall": 4,
+    "frame": 2,
+    "louvers": 5,
+    "balcony": 4,
+    "ceiling": 3
+  },
+  {
+    "id": 8,
+    "title": "Slate Facade & Charcoal Louvers",
+    "file": "images/combinations/combo_4_2_3_4_3.jpg",
+    "wall": 4,
+    "frame": 2,
+    "louvers": 3,
+    "balcony": 4,
+    "ceiling": 3
+  },
+  {
+    "id": 9,
+    "title": "Slate Facade & Ice Age Louvers",
+    "file": "images/combinations/combo_4_2_2_4_3.jpg",
+    "wall": 4,
+    "frame": 2,
+    "louvers": 2,
+    "balcony": 4,
+    "ceiling": 3
+  },
+  {
+    "id": 10,
+    "title": "Dual-Tone Slate Tower & Ice Age Balconies",
+    "file": "images/combinations/combo_4_3_1_2_3.jpg",
+    "wall": 4,
+    "frame": 3,
+    "louvers": 1,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 11,
+    "title": "Warm Earth Frame & Gold Louvers",
+    "file": "images/combinations/combo_2_5_1_2_5.jpg",
+    "wall": 2,
+    "frame": 5,
+    "louvers": 1,
+    "balcony": 2,
+    "ceiling": 5
+  },
+  {
+    "id": 12,
+    "title": "Brown Paper Frame & Charcoal Louvers",
+    "file": "images/combinations/combo_2_5_3_2_3.jpg",
+    "wall": 2,
+    "frame": 5,
+    "louvers": 3,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 13,
+    "title": "Seamless Brown Paper Feature Wall",
+    "file": "images/combinations/combo_2_5_5_2_3.jpg",
+    "wall": 2,
+    "frame": 5,
+    "louvers": 5,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 14,
+    "title": "Brown Paper Tower & Gold Louvers",
+    "file": "images/combinations/combo_5_3_1_2_3.jpg",
+    "wall": 5,
+    "frame": 3,
+    "louvers": 1,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 15,
+    "title": "Warm Latte Facade & Charcoal Slats",
+    "file": "images/combinations/combo_5_2_3_5_3.jpg",
+    "wall": 5,
+    "frame": 2,
+    "louvers": 3,
+    "balcony": 5,
+    "ceiling": 3
+  },
+  {
+    "id": 16,
+    "title": "Minimalist Ice Age & Gold Slats",
+    "file": "images/combinations/combo_2_2_1_2_4.jpg",
+    "wall": 2,
+    "frame": 2,
+    "louvers": 1,
+    "balcony": 2,
+    "ceiling": 4
+  },
+  {
+    "id": 17,
+    "title": "Stone Path Trim & Brown Paper Slats",
+    "file": "images/combinations/combo_2_4_5_4_3.jpg",
+    "wall": 2,
+    "frame": 4,
+    "louvers": 5,
+    "balcony": 4,
+    "ceiling": 3
+  },
+  {
+    "id": 18,
+    "title": "Bold Charcoal Tower & Ice Age Balconies",
+    "file": "images/combinations/combo_3_2_1_2_3.jpg",
+    "wall": 3,
+    "frame": 2,
+    "louvers": 1,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 19,
+    "title": "Slate Wall, Brown Paper Frame & Ice Age Slats",
+    "file": "images/combinations/combo_4_5_2_2_3.jpg",
+    "wall": 4,
+    "frame": 5,
+    "louvers": 2,
+    "balcony": 2,
+    "ceiling": 3
+  },
+  {
+    "id": 20,
+    "title": "Tri-Color: Ice Age, Charcoal, Gold & Brown Paper Balconies",
+    "file": "images/combinations/combo_2_3_1_5_3.jpg",
+    "wall": 2,
+    "frame": 3,
+    "louvers": 1,
+    "balcony": 5,
+    "ceiling": 3
+  }
+]
