@@ -104,13 +104,13 @@ const ZONES = {
   },
   9: {
     id: 9, key: "balcony_box", group: "5-Floor Balcony Structure",
-    name: "Balcony Right-Corner Box Blocks & Pillars", shortName: "Corner Box Blocks",
-    aliases: ["corner", "corner box", "pillars", "balcony box", "right pillar"],
+    name: "Balcony Right-Corner Vertical Pillars & Box Blocks", shortName: "Balcony Corner Pillar",
+    aliases: ["pillar", "pillars", "corner", "corner pillar", "balcony pillar", "corner box", "balcony box", "right pillar", "vertical pillar", "another pillar"],
     pinColor: "#14b8a6",
-    pins: { render: {x:"90%", y:"38%"}, front: {x:"88%", y:"40%"}, side: {x:"66%", y:"40%"} },
-    surfaceType: "Protruding 3D Corner Blocks & Right Vertical Columns",
+    pins: { render: {x:"95%", y:"56%"}, front: {x:"88%", y:"40%"}, side: {x:"66%", y:"40%"} },
+    surfaceType: "Continuous Vertical Structural Pillar & 3D Corner Blocks Across All 5 Balcony Floors",
     recommendedProduct: "Apex Ultima Protek Duralife",
-    defaultColorId: 2
+    defaultColorId: 3
   },
   10: {
     id: 10, key: "balcony_inner", group: "5-Floor Balcony Structure",
@@ -181,31 +181,41 @@ const ZONES = {
     surfaceType: "3 Metal Entrance Gates with Enamel Finish",
     recommendedProduct: "Asian Paints Apcolite Premium Gloss Enamel",
     defaultColorId: 1
+  },
+  17: {
+    id: 17, key: "stilt_pillars", group: "Side Elevation & Street Compound (KKKKKKK)",
+    name: "Ground Stilt Parking Columns & Gate Pillars", shortName: "Stilt & Gate Pillars",
+    aliases: ["stilt", "stilt pillar", "stilt column", "parking column", "gate pillar", "gate post"],
+    pinColor: "#0284c7",
+    pins: { render: {x:"95%", y:"95%"}, front: {x:"50%", y:"84%"}, side: {x:"42%", y:"80%"} },
+    surfaceType: "Ground Floor Heavy-Duty Parking Columns & Entrance Gate Concrete Posts",
+    recommendedProduct: "Apex Ultima Protek Duralife",
+    defaultColorId: 3
   }
 };
 
 // 3. PRE-GENERATED 20 ALL-COMBINATION VARIATIONS
 const COMBINATIONS_GALLERY = [
-  { id: 1,  title: "Signature Gold & Charcoal",              file: "images/combinations/combo_2_3_1_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:1, 7:1, 8:2, 9:2, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:1}, tag: "louvers-1" },
-  { id: 2,  title: "Brown Paper Louvers & Charcoal Trim",    file: "images/combinations/combo_2_3_5_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:5, 7:5, 8:2, 9:2, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:5}, tag: "louvers-5" },
-  { id: 3,  title: "Stone Path Louvers & Charcoal Trim",     file: "images/combinations/combo_2_3_4_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:4, 7:4, 8:2, 9:2, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:4}, tag: "louvers-4" },
-  { id: 4,  title: "Ice Age Louvers & Charcoal Frame",       file: "images/combinations/combo_2_3_2_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:2, 7:1, 8:2, 9:2, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:3}, tag: "louvers-2" },
-  { id: 5,  title: "Monolith Charcoal Louvers & Trim",       file: "images/combinations/combo_2_3_3_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:3, 7:1, 8:2, 9:2, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:3}, tag: "louvers-3" },
-  { id: 6,  title: "Slate Facade & Gold Louvers",            file: "images/combinations/combo_4_2_1_4_3.jpg", map: {1:4, 2:2, 3:2, 4:4, 5:2, 6:1, 7:1, 8:4, 9:2, 10:7, 11:3, 12:8, 13:4, 14:2, 15:4, 16:1}, tag: "louvers-1" },
-  { id: 7,  title: "Slate Facade & Brown Paper Louvers",     file: "images/combinations/combo_4_2_5_4_3.jpg", map: {1:4, 2:2, 3:2, 4:4, 5:2, 6:5, 7:5, 8:4, 9:2, 10:7, 11:3, 12:8, 13:4, 14:2, 15:4, 16:5}, tag: "louvers-5" },
-  { id: 8,  title: "Slate Facade & Charcoal Louvers",        file: "images/combinations/combo_4_2_3_4_3.jpg", map: {1:4, 2:2, 3:2, 4:4, 5:2, 6:3, 7:1, 8:4, 9:2, 10:7, 11:3, 12:8, 13:4, 14:2, 15:4, 16:3}, tag: "louvers-3" },
-  { id: 9,  title: "Slate Facade & Ice Age Louvers",         file: "images/combinations/combo_4_2_2_4_3.jpg", map: {1:4, 2:2, 3:2, 4:4, 5:2, 6:2, 7:1, 8:4, 9:2, 10:7, 11:3, 12:8, 13:4, 14:2, 15:4, 16:2}, tag: "louvers-2" },
-  { id: 10, title: "Dual-Tone Slate Tower & Ice Balconies",  file: "images/combinations/combo_4_3_1_2_3.jpg", map: {1:4, 2:3, 3:3, 4:2, 5:3, 6:1, 7:1, 8:2, 9:3, 10:7, 11:3, 12:8, 13:4, 14:3, 15:2, 16:1}, tag: "louvers-1" },
-  { id: 11, title: "Warm Earth Frame & Gold Louvers",        file: "images/combinations/combo_2_5_1_2_5.jpg", map: {1:2, 2:5, 3:5, 4:2, 5:5, 6:1, 7:6, 8:2, 9:5, 10:7, 11:5, 12:8, 13:2, 14:5, 15:2, 16:1}, tag: "louvers-1" },
-  { id: 12, title: "Brown Paper Frame & Charcoal Louvers",   file: "images/combinations/combo_2_5_3_2_3.jpg", map: {1:2, 2:5, 3:5, 4:2, 5:5, 6:3, 7:3, 8:2, 9:5, 10:7, 11:3, 12:8, 13:2, 14:5, 15:2, 16:3}, tag: "louvers-3" },
-  { id: 13, title: "Seamless Brown Paper Feature Wall",      file: "images/combinations/combo_2_5_5_2_3.jpg", map: {1:2, 2:5, 3:5, 4:5, 5:3, 6:5, 7:6, 8:2, 9:3, 10:7, 11:3, 12:8, 13:2, 14:5, 15:2, 16:5}, tag: "louvers-5" },
-  { id: 14, title: "Brown Paper Tower & Gold Louvers",       file: "images/combinations/combo_5_3_1_2_3.jpg", map: {1:5, 2:3, 3:3, 4:2, 5:3, 6:1, 7:1, 8:2, 9:3, 10:7, 11:3, 12:8, 13:5, 14:3, 15:5, 16:1}, tag: "louvers-1" },
-  { id: 15, title: "Warm Latte Facade & Charcoal Slats",     file: "images/combinations/combo_5_2_3_5_3.jpg", map: {1:5, 2:2, 3:2, 4:5, 5:2, 6:3, 7:1, 8:5, 9:2, 10:7, 11:3, 12:8, 13:5, 14:2, 15:5, 16:3}, tag: "louvers-3" },
-  { id: 16, title: "Minimalist Ice Age & Gold Slats",        file: "images/combinations/combo_2_2_1_2_4.jpg", map: {1:2, 2:2, 3:2, 4:2, 5:2, 6:1, 7:1, 8:2, 9:2, 10:7, 11:4, 12:8, 13:2, 14:4, 15:2, 16:1}, tag: "louvers-1" },
-  { id: 17, title: "Stone Path Trim & Brown Paper Slats",    file: "images/combinations/combo_2_4_5_4_3.jpg", map: {1:2, 2:4, 3:4, 4:2, 5:4, 6:5, 7:5, 8:4, 9:2, 10:7, 11:3, 12:8, 13:2, 14:4, 15:2, 16:5}, tag: "louvers-5" },
-  { id: 18, title: "Bold Charcoal Tower & Ice Balconies",    file: "images/combinations/combo_3_2_1_2_3.jpg", map: {1:3, 2:2, 3:2, 4:3, 5:2, 6:1, 7:1, 8:2, 9:3, 10:7, 11:3, 12:8, 13:3, 14:2, 15:2, 16:1}, tag: "louvers-1" },
-  { id: 19, title: "Slate Wall, Brown Trim & Ice Slats",     file: "images/combinations/combo_4_5_2_2_3.jpg", map: {1:4, 2:5, 3:5, 4:2, 5:5, 6:2, 7:6, 8:2, 9:5, 10:7, 11:3, 12:8, 13:4, 14:5, 15:4, 16:5}, tag: "louvers-2" },
-  { id: 20, title: "Tri-Color Gold, Charcoal & Brown Paper", file: "images/combinations/combo_2_3_1_5_3.jpg", map: {1:2, 2:3, 3:3, 4:5, 5:3, 6:1, 7:6, 8:5, 9:3, 10:7, 11:3, 12:8, 13:2, 14:3, 15:5, 16:1}, tag: "louvers-1" }
+  { id: 1,  title: "Signature Gold & Charcoal",              file: "images/combinations/combo_2_3_1_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:1, 7:1, 8:2, 9:3, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:1, 17:3}, tag: "louvers-1" },
+  { id: 2,  title: "Brown Paper Louvers & Charcoal Trim",    file: "images/combinations/combo_2_3_5_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:5, 7:5, 8:2, 9:3, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:5, 17:3}, tag: "louvers-5" },
+  { id: 3,  title: "Stone Path Louvers & Charcoal Trim",     file: "images/combinations/combo_2_3_4_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:4, 7:4, 8:2, 9:3, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:4, 17:3}, tag: "louvers-4" },
+  { id: 4,  title: "Ice Age Louvers & Charcoal Frame",       file: "images/combinations/combo_2_3_2_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:2, 7:1, 8:2, 9:3, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:3, 17:3}, tag: "louvers-2" },
+  { id: 5,  title: "Monolith Charcoal Louvers & Trim",       file: "images/combinations/combo_2_3_3_2_3.jpg", map: {1:2, 2:3, 3:3, 4:2, 5:3, 6:3, 7:1, 8:2, 9:3, 10:7, 11:3, 12:8, 13:2, 14:3, 15:2, 16:3, 17:3}, tag: "louvers-3" },
+  { id: 6,  title: "Slate Facade & Gold Louvers",            file: "images/combinations/combo_4_2_1_4_3.jpg", map: {1:4, 2:2, 3:2, 4:4, 5:2, 6:1, 7:1, 8:4, 9:2, 10:7, 11:3, 12:8, 13:4, 14:2, 15:4, 16:1, 17:2}, tag: "louvers-1" },
+  { id: 7,  title: "Slate Facade & Brown Paper Louvers",     file: "images/combinations/combo_4_2_5_4_3.jpg", map: {1:4, 2:2, 3:2, 4:4, 5:2, 6:5, 7:5, 8:4, 9:2, 10:7, 11:3, 12:8, 13:4, 14:2, 15:4, 16:5, 17:2}, tag: "louvers-5" },
+  { id: 8,  title: "Slate Facade & Charcoal Louvers",        file: "images/combinations/combo_4_2_3_4_3.jpg", map: {1:4, 2:2, 3:2, 4:4, 5:2, 6:3, 7:1, 8:4, 9:2, 10:7, 11:3, 12:8, 13:4, 14:2, 15:4, 16:3, 17:2}, tag: "louvers-3" },
+  { id: 9,  title: "Slate Facade & Ice Age Louvers",         file: "images/combinations/combo_4_2_2_4_3.jpg", map: {1:4, 2:2, 3:2, 4:4, 5:2, 6:2, 7:1, 8:4, 9:2, 10:7, 11:3, 12:8, 13:4, 14:2, 15:4, 16:2, 17:2}, tag: "louvers-2" },
+  { id: 10, title: "Dual-Tone Slate Tower & Ice Balconies",  file: "images/combinations/combo_4_3_1_2_3.jpg", map: {1:4, 2:3, 3:3, 4:2, 5:3, 6:1, 7:1, 8:2, 9:3, 10:7, 11:3, 12:8, 13:4, 14:3, 15:2, 16:1, 17:3}, tag: "louvers-1" },
+  { id: 11, title: "Warm Earth Frame & Gold Louvers",        file: "images/combinations/combo_2_5_1_2_5.jpg", map: {1:2, 2:5, 3:5, 4:2, 5:5, 6:1, 7:6, 8:2, 9:5, 10:7, 11:5, 12:8, 13:2, 14:5, 15:2, 16:1, 17:5}, tag: "louvers-1" },
+  { id: 12, title: "Brown Paper Frame & Charcoal Louvers",   file: "images/combinations/combo_2_5_3_2_3.jpg", map: {1:2, 2:5, 3:5, 4:2, 5:5, 6:3, 7:3, 8:2, 9:5, 10:7, 11:3, 12:8, 13:2, 14:5, 15:2, 16:3, 17:3}, tag: "louvers-3" },
+  { id: 13, title: "Seamless Brown Paper Feature Wall",      file: "images/combinations/combo_2_5_5_2_3.jpg", map: {1:2, 2:5, 3:5, 4:5, 5:3, 6:5, 7:6, 8:2, 9:3, 10:7, 11:3, 12:8, 13:2, 14:5, 15:2, 16:5, 17:3}, tag: "louvers-5" },
+  { id: 14, title: "Brown Paper Tower & Gold Louvers",       file: "images/combinations/combo_5_3_1_2_3.jpg", map: {1:5, 2:3, 3:3, 4:2, 5:3, 6:1, 7:1, 8:2, 9:3, 10:7, 11:3, 12:8, 13:5, 14:3, 15:5, 16:1, 17:3}, tag: "louvers-1" },
+  { id: 15, title: "Warm Latte Facade & Charcoal Slats",     file: "images/combinations/combo_5_2_3_5_3.jpg", map: {1:5, 2:2, 3:2, 4:5, 5:2, 6:3, 7:1, 8:5, 9:2, 10:7, 11:3, 12:8, 13:5, 14:2, 15:5, 16:3, 17:2}, tag: "louvers-3" },
+  { id: 16, title: "Minimalist Ice Age & Gold Slats",        file: "images/combinations/combo_2_2_1_2_4.jpg", map: {1:2, 2:2, 3:2, 4:2, 5:2, 6:1, 7:1, 8:2, 9:2, 10:7, 11:4, 12:8, 13:2, 14:4, 15:2, 16:1, 17:2}, tag: "louvers-1" },
+  { id: 17, title: "Stone Path Trim & Brown Paper Slats",    file: "images/combinations/combo_2_4_5_4_3.jpg", map: {1:2, 2:4, 3:4, 4:2, 5:4, 6:5, 7:5, 8:4, 9:2, 10:7, 11:3, 12:8, 13:2, 14:4, 15:2, 16:5, 17:3}, tag: "louvers-5" },
+  { id: 18, title: "Bold Charcoal Tower & Ice Balconies",    file: "images/combinations/combo_3_2_1_2_3.jpg", map: {1:3, 2:2, 3:2, 4:3, 5:2, 6:1, 7:1, 8:2, 9:3, 10:7, 11:3, 12:8, 13:3, 14:2, 15:2, 16:1, 17:3}, tag: "louvers-1" },
+  { id: 19, title: "Slate Wall, Brown Trim & Ice Slats",     file: "images/combinations/combo_4_5_2_2_3.jpg", map: {1:4, 2:5, 3:5, 4:2, 5:5, 6:2, 7:6, 8:2, 9:5, 10:7, 11:3, 12:8, 13:4, 14:5, 15:4, 16:5, 17:5}, tag: "louvers-2" },
+  { id: 20, title: "Tri-Color Gold, Charcoal & Brown Paper", file: "images/combinations/combo_2_3_1_5_3.jpg", map: {1:2, 2:3, 3:3, 4:5, 5:3, 6:1, 7:6, 8:5, 9:3, 10:7, 11:3, 12:8, 13:2, 14:3, 15:5, 16:1, 17:3}, tag: "louvers-1" }
 ];
 
 // 4. CAMERA VIEWS CONFIGURATION
@@ -258,12 +268,12 @@ function hexToRgb(hex) {
 }
 
 function initState() {
-  const saved = localStorage.getItem("paintStudio16ZoneV4");
+  const saved = localStorage.getItem("paintStudio17ZoneV5");
   if (saved) {
     try {
       const parsed = JSON.parse(saved);
       if (parsed.colors) COLOR_MAP = parsed.colors;
-      if (parsed.assignments && Object.keys(parsed.assignments).length >= 12) {
+      if (parsed.assignments && Object.keys(parsed.assignments).length >= 17) {
         currentAssignments = parsed.assignments;
         return;
       }
@@ -281,7 +291,7 @@ function resetToDefaults() {
 }
 
 function saveState() {
-  localStorage.setItem("paintStudio16ZoneV4", JSON.stringify({
+  localStorage.setItem("paintStudio17ZoneV5", JSON.stringify({
     colors: COLOR_MAP,
     assignments: currentAssignments
   }));
@@ -370,11 +380,11 @@ function renderPhotorealisticCanvas() {
     return;
   }
 
-  const zoneR = new Uint8Array(17);
-  const zoneG = new Uint8Array(17);
-  const zoneB = new Uint8Array(17);
+  const zoneR = new Uint8Array(19);
+  const zoneG = new Uint8Array(19);
+  const zoneB = new Uint8Array(19);
 
-  for (let z = 1; z <= 16; z++) {
+  for (let z = 1; z <= 17; z++) {
     const cid = currentAssignments[z] || ZONES[z].defaultColorId;
     const c = COLOR_MAP[cid] || COLOR_MAP[1];
     const rgb = c.rgb || hexToRgb(c.hex);
@@ -388,7 +398,7 @@ function renderPhotorealisticCanvas() {
     const zid = zonePixels[i];
     const alpha = zonePixels[i + 1];
 
-    if (zid === 0 || zid > 16 || alpha === 0) {
+    if (zid === 0 || zid > 17 || alpha === 0) {
       dst[i] = basePixels[i];
       dst[i + 1] = basePixels[i + 1];
       dst[i + 2] = basePixels[i + 2];
@@ -441,7 +451,7 @@ function setupCanvasInteraction() {
 
   canvas.addEventListener("click", (e) => {
     const zid = getZoneAtEvent(e);
-    if (zid >= 1 && zid <= 16) {
+    if (zid >= 1 && zid <= 17) {
       selectZone(zid);
     }
   });
@@ -449,7 +459,7 @@ function setupCanvasInteraction() {
   canvas.addEventListener("mousemove", (e) => {
     const zid = getZoneAtEvent(e);
     const tooltip = document.getElementById("hover-tooltip");
-    if (zid >= 1 && zid <= 16) {
+    if (zid >= 1 && zid <= 17) {
       canvas.style.cursor = "pointer";
       const z = ZONES[zid];
       const cid = currentAssignments[zid];
@@ -927,7 +937,7 @@ function updateScheduleTable() {
 
 function copyFormulation() {
   let spec = "========================================================\n";
-  spec += "COMPLETE 16-ZONE ARCHITECTURAL PAINT SCHEDULE\n";
+  spec += "COMPLETE 17-ZONE ARCHITECTURAL PAINT SCHEDULE\n";
   spec += "========================================================\n\n";
   Object.keys(ZONES).forEach(k => {
     const zid = parseInt(k);
@@ -938,7 +948,7 @@ function copyFormulation() {
   });
   spec += "\nCONSTRUCTIBLE AI PROMPT:\n" + buildConstructiblePrompt();
   navigator.clipboard.writeText(spec).then(() => {
-    alert("Copied all 16 Zone Paint Specifications & AI Prompt to clipboard!");
+    alert("Copied all 17 Zone Paint Specifications & AI Prompt to clipboard!");
   });
 }
 
